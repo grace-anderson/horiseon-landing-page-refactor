@@ -21,13 +21,17 @@ footer {
 /* ----- Header ----- */
 header {
   background-color: #2a607c;
-  max-width: 100%
+  max-width: 100%;
 }
 
 header h1 {
   display: inline-block;
   font-size: 48px;
   padding: 20px 0 20px 20px;
+}
+
+main {
+  max-width: 100%;
 }
 
 /* Change colour of SEO letters in company's name */
