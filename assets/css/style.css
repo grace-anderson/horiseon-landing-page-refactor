@@ -1,0 +1,192 @@
+/* ----- UNIVERSAL SELECTOR ----- */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* ----- ELEMENT AND CLASS SELECTORS ----- */
+body {
+  background-color: #d9dcd6;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #ffffff;
+}
+
+header,
+footer {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* ----- Header ----- */
+header {
+  background-color: #2a607c;
+  max-width: 100%
+}
+
+header h1 {
+  display: inline-block;
+  font-size: 48px;
+  padding: 20px 0 20px 20px;
+}
+
+/* Change colour of SEO letters in company's name */
+.seo {
+  color: #d9dcd6;
+}
+
+/* ----- Navigation ----- */
+header nav {
+  padding-top: 40px;
+  margin-right: 20px;
+  float: right;
+  font-size: 20px;
+}
+
+nav {
+  display: fixed;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+header nav ul li:last-child {
+  margin-right: 30px;
+}
+
+/* ----- links ----- */
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* ----- Paragraphs ----- */
+p {
+  font-size: 16px;
+}
+
+/* ----- Hero  ----- */
+/* hero element uses flex container to responsively position image in window 'above the fold'*/
+.hero {
+  position: relative;
+  /* viewport width and height so image spans entire background */
+  /* max-width: 100%; */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+/* hero-content centres image across background'*/
+.hero-content {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/digital-marketing-meeting.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/* ----- Articles ----- */
+article {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  background-color: #0072bb;
+}
+
+article div header {
+  background-color: transparent;
+  width: 100%;
+}
+
+article img {
+  max-height: 200px;
+  max-width: 30%;
+}
+
+article h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+/* article positioning */
+.content {
+  width: 75%;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {ine;
+  float: right;
+}
+
+div.float-right,
+div.float-left {
+  max-width: 68%;
+}
+
+/* ----- Benefits side bar  ----- */
+/* Layout visually relates each benefit heading to its icon and text*/
+.benefits {
+  margin-right: 20px;
+  padding: 25px;
+  clear: both;
+  float: right;
+  width: 20%;
+  height: 100%;
+  background-color: #2589bd;
+}
+
+aside {
+  margin-bottom: 60px;
+}
+
+.benefits aside:first-child {
+  margin-top: 30px;
+}
+
+.benefits aside:last-child {
+  margin-bottom: 20px;
+}
+
+aside h3 {
+  text-align: center;
+}
+
+img.icon {
+  display: block;
+  margin: 0 auto;
+  max-width: 150px;
+}
+
+/* ----- Footer ----- */
+footer {
+  padding: 30px;
+  clear: both;
+  text-align: center;
+  color: #000000;
+}
+
+footer h4 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.visible {
+  visibility: visible;
+}
