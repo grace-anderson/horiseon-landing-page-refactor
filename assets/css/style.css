@@ -51,16 +51,16 @@ nav {
   display: fixed;
 }
 
-header nav ul {
+header ul {
   list-style-type: none;
 }
 
-header nav ul li {
+header ul li {
   display: inline-block;
   margin-left: 25px;
 }
 
-header nav ul li:last-child {
+header ul li:last-child {
   margin-right: 30px;
 }
 
